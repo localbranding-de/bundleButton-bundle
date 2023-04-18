@@ -1,7 +1,16 @@
 <?php
 
 
-
+if(\Input::get('do') == 'lb_bundles')
+{
+    
+    
+    $GLOBALS['TL_JAVASCRIPT'][] = '/assets/jquery/js/jquery.min.js';
+    $GLOBALS['TL_JAVASCRIPT'][] = '/bundles/extendedproductdetail/js/lb_be_bundle.js';
+   // $GLOBALS['TL_CSS'][] = '/bundles/extendedproductdetail/css/lb_be_font.css';
+    //$GLOBALS['TL_CSS'][] = '/files/theme_lb_demoshop/css/lb-default.css';
+    
+}
 
 // Frontend modules
 $GLOBALS['FE_MOD']['LocalBranding Module']['productButton'] = 'LocalbrandingDe\ExtendedProductDetailBundle\Module\ProductButtonModule'; 
