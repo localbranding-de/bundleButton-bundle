@@ -37,14 +37,14 @@ $GLOBALS['TL_DCA']['tl_lb_productBundle'] = array
             'label'     => &$GLOBALS['TL_LANG']['tl_lb_productBundle']['bundleNr'],
             'inputType' => 'text',
             'eval'      =>  array('maxlength'=>255),
-            'sql'       => "varchar(256) NOT NULL UNIQUE"
+            'sql'       => "varchar(256)"
         ),
         'bundleName' => array
         (
             'label'     => &$GLOBALS['TL_LANG']['tl_lb_productBundle']['bundleName'],
             'inputType' => 'text',
             'eval'      => array('tl_class'=>'w50','maxlength'=>255),
-            'sql'       => "varchar(256) NOT NULL "
+            'sql'       => "varchar(256)"
         ),
         'bundleDescription' => array
         (
