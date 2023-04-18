@@ -1,6 +1,6 @@
 <?php
 
-namespace LocalbrandingDe\ExtendedProductDetailBundle\Module;
+namespace LocalbrandingDe\BundleButtonBundle\Module;
 
 class ProductButtonModule extends \Module
 {
@@ -55,7 +55,7 @@ class ProductButtonModule extends \Module
         } else {
             
             // calendar-extended-bundel assets
-            $assets_path = '/bundles/extendedproductdetail';
+            $assets_path = '/bundles/bundlebutton';
             // JS files
             $GLOBALS['TL_JAVASCRIPT'][] = $assets_path. '/js/lb_fe_productButton.js';
             // fullcalendar 3.9.0
