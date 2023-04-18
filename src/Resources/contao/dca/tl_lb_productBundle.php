@@ -24,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_lb_productBundle'] = array
     'palettes' => array
     (
         
-        'default'                     => '{set_legend},bundleNr,bundleName,bundleDescription,packageItems,sumPriceAll,discount,pagetest;'
+        'default'                     => '{set_legend},bundleNr,bundleName,bundleDescription,packageItems,sumPriceAll,discount;'
         
     ),
     // Fields
@@ -52,15 +52,8 @@ $GLOBALS['TL_DCA']['tl_lb_productBundle'] = array
             'exclude' 		=> true,
             'inputType' 	=> 'textarea',
             'eval'      	=> array('tl_class'=>'clr wizard','rte'=>'tinyMCE'),
-            'search'		=> true
-        ),
-        'pagetest' => array
-        (
-            'label'     => &$GLOBALS['TL_LANG']['tl_lb_productBundle']['pagetest'],
-            'exclude' 		=> true,
-            'inputType' 	=> 'pageTree',
-            'eval'      	=> array('tl_class'=>'clr wizard','fieldType'=>'radio',),
-            'sql'                   => 'int(32) NULL'
+            'search'		=> true,
+            'sql'           => "mediumtext NULL"
         ),
         
         'packageItems' => array
