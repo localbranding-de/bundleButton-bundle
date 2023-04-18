@@ -1,6 +1,5 @@
 <?php
-use LocalbrandingDe\BundleButtonBundle\Classes\SyncFields;
-use LocalbrandingDe\BundleButtonBundle\Classes\Doctrineinteractions;
+
 /**
  * Table tl_ls_shop_product
 
