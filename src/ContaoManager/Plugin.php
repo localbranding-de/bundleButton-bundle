@@ -24,8 +24,8 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(BundleButtonBundle::class)
-            ->setLoadAfter([ContaoCoreBundle::class]),
+            BundleConfig::create(ExtendedProductDetailBundle::class)
+            ->setLoadAfter([ContaoCoreBundle::class,'LeadingSystems\MerconisBundle\LeadingSystemsMerconisBundle']),
         ];
     }
 }
