@@ -1,6 +1,6 @@
 <?php
 
-namespace LocalbrandingDe\ExtendedProductDetailBundle\Module;
+namespace LocalbrandingDe\BundleButtonBundle\Module;
 
 class BundleHandlerModule extends \Module
 {
@@ -51,7 +51,7 @@ class BundleHandlerModule extends \Module
         } else {
             
             // calendar-extended-bundel assets
-           $assets_path = '/bundles/extendedproductdetail';
+           $assets_path = '/bundles/bundlebutton';
             // JS files
 
             $GLOBALS['TL_JAVASCRIPT'][] = $assets_path. '/js/lb_fe_bundleHandler.js';
@@ -216,7 +216,7 @@ class BundleHandlerModule extends \Module
                                 }
                             }
                         }
-                        file_put_contents("fe",$product->id."minquan : ".$item['quantity']."  quan:".$item['sellingUnit']);
+
                         
                         if($product->lb_sellingUnit > $quantity)
                         {
